@@ -23,7 +23,7 @@
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow-sm fixed-top">
       <div class="container">
-        <a class="navbar-brand" href="#">Revy Nanda Rosalvin</a>
+        <a class="navbar-brand" href="#">Portfolio | Revy Nanda R</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -50,7 +50,7 @@
     <!-- Jumbotron -->
     <section class="jumbotron text-center">
       <img src="img/revy.png" alt="Revy Nanda Rosalvin" width="200" class="rounded-circle img-thumbnail" />
-      <h1 class="display-4">Revy Nanda Rosalvin</h1>
+      <h1 class="display-4">Revy Nanda R</h1>
       <p class="lead"></p>
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
         <path
@@ -143,6 +143,41 @@
                 </div>
             </div>
         </div>
+
+        <section id="my-keyboards">
+          <div class="container">
+            <div class="row text-center mb-3">
+              <div class="col">
+                <h2>My Keyboards</h2>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6 col-lg-4 mb-3">
+                <div class="keyboard-box">
+                  <h4 class="keyboard-name">Keychron K2</h4>
+                  <img src="img/keyboards/1.png" alt="Keychron K3" class="keyboard-img"/>
+                  <a href="#" class="btn btn-light keyboard-detail-button">Show Details</a>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-4 mb-3">
+                <div class="keyboard-box">
+                  <h4 class="keyboard-name">Womier RGB</h4>
+                  <img src="img/keyboards/2.png" alt="Womier RGB" class="keyboard-img"/>
+                  <a href="#" class="btn btn-light keyboard-detail-button">Show Details</a>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-4 mb-3">
+                <div class="keyboard-box">
+                  <h4 class="keyboard-name">Red Dragon</h4>
+                  <img src="img/keyboards/3.png" alt="Red Dragon" class="keyboard-img"/>
+                  <a href="#" class="btn btn-light keyboard-detail-button">Show Details</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ffffff" fill-opacity="1" d="M0,288L48,261.3C96,235,192,181,288,144C384,107,480,85,576,112C672,139,768,213,864,218.7C960,224,1056,160,1152,144C1248,128,1344,160,1392,176L1440,192L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
     </section>
     <!-- Akhir Projects -->
@@ -283,7 +318,7 @@
 
     <script>
       gsap.registerPlugin(TextPlugin);
-      gsap.to('.lead', {duration: 2, delay: 1, text: 'Revy adalah Raja hahahaha'});
+      gsap.to('.lead', {duration: 2, delay: 1, text: 'Techincal Engineer / IT Support / CAD Drafter'});
       gsap.from('.jumbotron img', {duration: 1, rotateY:360, opacity: 0});
       gsap.from('.navbar', { duration: 1.5, y: '-100%', opacity: 0, ease: 'bounce'});
       gsap.from('.display-4', { duration: 1, x: -50, opacity: 0, delay: 0.7, ease: 'back'});
@@ -315,6 +350,13 @@
             console.log('Success!', response);
           })
           .catch((error) => console.error('Error!', error.message));
+      });
+    </script>
+    <script type="text/javascript" src="js/vanilla-tilt.min.js"></script>
+    <script type="text/javascript">
+      VanillaTilt.init(document.querySelectorAll('.keyboard-box'), {
+        max: 25,
+        speed: 400
       });
     </script>
   </body>
